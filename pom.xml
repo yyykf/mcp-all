@@ -11,6 +11,7 @@
 	<groupId>com.code4j.ai</groupId>
 	<artifactId>mcp-all</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>mcp-all</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -20,6 +21,10 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>mcp-server</module>
+		<module>mcp-client</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
@@ -30,26 +35,7 @@
 		<java.version>21</java.version>
 		<spring-ai.version>1.0.0-M6</spring-ai.version>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.ai</groupId>
-			<artifactId>spring-ai-mcp-client-spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.ai</groupId>
-			<artifactId>spring-ai-mcp-server-webmvc-spring-boot-starter</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
