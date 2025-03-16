@@ -1,0 +1,26 @@
+spring:
+  ai:
+    mcp:
+      client:
+        sse:
+          connections:
+            mcp-server:
+              url: http://localhost:8080
+        name: mcp-client
+        version: ${project.version}
+    openai:
+      base-url: ENC(vCATq0hlVOrei2ZZJc5OICUxqs5cMISBbx7odRsA/j2H3Jv7RGjxA/qrzIbAGUgFZe+9Hhpfifw=)
+      api-key: ENC(hnsMz0rJnXHwkfm1He3ISSM03d4SPYAqCFtCmRwwF+pahgjdoiu4eeavbOvGO1VoMNB3yQDKxoE=)
+      chat:
+        options:
+          model: Qwen/QwQ-32B
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    property:
+      prefix: ENC(
+      suffix: )
+    # from command line
+    password: fake-password
+server:
+  port: 8888
