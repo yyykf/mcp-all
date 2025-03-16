@@ -36,6 +36,7 @@
         <spring-ai.version>1.0.0-SNAPSHOT</spring-ai.version>
         <hutool.version>5.8.36</hutool.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
+        <jasypt.version>3.0.5</jasypt.version>
     </properties>
 
     <dependencyManagement>
@@ -59,6 +60,12 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

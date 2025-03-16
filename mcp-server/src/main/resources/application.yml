@@ -1,9 +1,18 @@
 ws:
   al-api:
     host: https://v3.alapi.cn
-    token: 21680fck3zMTScWw
+    # replace to your key
+    token: ENC(Novnrxv3g3gwTNz8ESmqZ9y2uamSLykjvPydUr8t+kJSLrE+T2VPfTUhhrnR8CYF)
 spring:
   ai:
     mcp:
       server:
         version: ${project.version}
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    property:
+      prefix: ENC(
+      suffix: )
+    # from command line
+    password: fake-password
