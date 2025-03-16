@@ -39,20 +39,6 @@ public class ALApiService {
     }
 
     /**
-     * 根据城市ID查询实况天气
-     *
-     * @param cityId 城市ID
-     * @return 天气信息响应
-     */
-    public ALResponse<WeatherData> getWeatherByCityId(String cityId) {
-        WeatherRequest request = WeatherRequest.builder()
-                .token(this.token)
-                .cityId(cityId)
-                .build();
-        return alWeatherFeignClient.getWeather(request);
-    }
-
-    /**
      * 根据IP查询实况天气
      *
      * @param ip IP地址
