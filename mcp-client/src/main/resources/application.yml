@@ -6,6 +6,17 @@ spring:
           connections:
             mcp-server:
               url: http://localhost:8080
+        stdio:
+          connections:
+            amap-maps:
+              command: cmd
+              args:
+                - /c
+                - npx
+                - -y
+                - "@amap/amap-maps-mcp-server"
+              env:
+                AMAP_MAPS_API_KEY: ENC(OxdeRXI3OfollKvFcfn5EKjloq9ZyH8bBX384JB3Tdp7TXvTDVGkexjmMbD/LcNooqBobNN0qLY=)
         name: mcp-client
         version: ${project.version}
     openai:
