@@ -9,11 +9,11 @@ spring:
         name: mcp-client
         version: ${project.version}
     openai:
-      base-url: ENC(vCATq0hlVOrei2ZZJc5OICUxqs5cMISBbx7odRsA/j2H3Jv7RGjxA/qrzIbAGUgFZe+9Hhpfifw=)
-      api-key: ENC(hnsMz0rJnXHwkfm1He3ISSM03d4SPYAqCFtCmRwwF+pahgjdoiu4eeavbOvGO1VoMNB3yQDKxoE=)
+      base-url: https://api.deepseek.com
+      api-key: ENC(iyG3/IJIW/GudIJuGpgO2P0CwK46pZC729rjwGmTVkBAtaWRSW01HVtrYxCc3p2Nk0k9CcTM+PE=)
       chat:
         options:
-          model: Qwen/QwQ-32B
+          model: deepseek-chat
 jasypt:
   encryptor:
     algorithm: PBEWithMD5AndDES
