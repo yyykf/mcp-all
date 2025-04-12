@@ -16,3 +16,8 @@ jasypt:
       suffix: )
     # from command line
     password: fake-password
+
+remote:
+  feishu:
+    app_id: replace-me
+    app_secret: replace-me

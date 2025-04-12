@@ -1,5 +1,6 @@
 package com.code4j.ai.mcp.server.config;
 
+import com.code4j.ai.mcp.server.feishu.service.FeishuService;
 import com.code4j.ai.mcp.server.weather.service.WeatherService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
@@ -14,7 +15,11 @@ import org.springframework.context.annotation.*;
 public class ToolConfig {
 
     @Bean
-    public ToolCallbackProvider weatherToolCallbackProvider(WeatherService weatherService) {
-        return MethodToolCallbackProvider.builder().toolObjects(weatherService).build();
+    public ToolCallbackProvider weatherToolCallbackProvider(WeatherService weatherService,
+            FeishuService feishuService) {
+        return MethodToolCallbackProvider
+                .builder()
+                .toolObjects(weatherService, feishuService)
+                .build();
     }
 }
