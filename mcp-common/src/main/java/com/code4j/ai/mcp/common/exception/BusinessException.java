@@ -1,4 +1,4 @@
-package com.code4j.ai.mcp.server.common.exception;
+package com.code4j.ai.mcp.common.exception;
 
 import lombok.*;
 

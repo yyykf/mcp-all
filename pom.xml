@@ -24,6 +24,7 @@
     <modules>
         <module>mcp-server</module>
         <module>mcp-client</module>
+        <module>mcp-common</module>
     </modules>
     <scm>
         <connection/>
@@ -55,6 +56,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.code4j.ai</groupId>
+                <artifactId>mcp-common</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>

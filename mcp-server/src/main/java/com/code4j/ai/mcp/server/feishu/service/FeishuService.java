@@ -2,8 +2,8 @@ package com.code4j.ai.mcp.server.feishu.service;
 
 import static com.code4j.ai.mcp.server.common.constants.AssemblerConstant.BI_TABLE_ASSEMBLER;
 
+import com.code4j.ai.mcp.common.exception.BusinessException;
 import com.code4j.ai.mcp.server.common.config.props.FeishuProperties;
-import com.code4j.ai.mcp.server.common.exception.BusinessException;
 import com.code4j.ai.mcp.server.feishu.model.vo.BiTableAppVo;
 import com.lark.oapi.Client;
 import com.lark.oapi.core.response.BaseResponse;
