@@ -1,4 +1,4 @@
-package com.code4j.ai.mcp.server.config;
+package com.code4j.ai.mcp.server.common.config;
 
 import feign.*;
 import java.util.concurrent.TimeUnit;

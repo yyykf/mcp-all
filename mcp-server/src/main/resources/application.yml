@@ -21,3 +21,7 @@ remote:
   feishu:
     app_id: replace-me
     app_secret: replace-me
+    bi_table:
+      app_token: ENC(9qbWkbHWWjhntK6Kgz5pYv/DC7l+qheJrNRaOctBqCUb8SE6jbszSwe7P4ns8tSl)
+      inbox_table_id: ENC(ZhWSYX5uUkHLu4eVzemjIUew/IaPZJSjgPFCjH60Yqly2EK9K7rK1g==)
+      key_table_id: ENC(Vg+rt4Dcu5sE7wi0DpLf4841rMgm1uvONMrqq/98DcJMoGwFXxFJzQ==)

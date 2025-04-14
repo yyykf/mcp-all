@@ -1,4 +1,4 @@
-package com.code4j.ai.mcp.server.config;
+package com.code4j.ai.mcp.server.common.config;
 
 import com.code4j.ai.mcp.server.feishu.service.FeishuService;
 import com.code4j.ai.mcp.server.weather.service.WeatherService;
