@@ -39,6 +39,7 @@
         <spring-cloud.version>2024.0.0</spring-cloud.version>
         <jasypt.version>3.0.5</jasypt.version>
         <mapstruct.version>1.6.3</mapstruct.version>
+        <fastjson2.version>2.0.52</fastjson2.version>
     </properties>
 
     <dependencyManagement>
@@ -85,6 +86,12 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

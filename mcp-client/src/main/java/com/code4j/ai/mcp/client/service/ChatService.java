@@ -1,6 +1,6 @@
 package com.code4j.ai.mcp.client.service;
 
-import com.code4j.ai.mcp.client.model.dto.*;
+import com.code4j.ai.mcp.client.model.dto.chat.*;
 
 /**
  * @Description

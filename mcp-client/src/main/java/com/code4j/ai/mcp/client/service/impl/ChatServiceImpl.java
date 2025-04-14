@@ -1,6 +1,6 @@
 package com.code4j.ai.mcp.client.service.impl;
 
-import com.code4j.ai.mcp.client.model.dto.*;
+import com.code4j.ai.mcp.client.model.dto.chat.*;
 import com.code4j.ai.mcp.client.service.ChatService;
 import jakarta.annotation.PostConstruct;
 import java.util.Arrays;

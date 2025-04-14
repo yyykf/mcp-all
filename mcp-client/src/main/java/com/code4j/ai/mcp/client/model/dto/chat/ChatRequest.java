@@ -1,4 +1,4 @@
-package com.code4j.ai.mcp.client.model.dto;
+package com.code4j.ai.mcp.client.model.dto.chat;
 
 import cn.hutool.core.text.CharSequenceUtil;
 import com.code4j.ai.mcp.common.exception.BusinessException;
