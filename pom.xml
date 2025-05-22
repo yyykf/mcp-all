@@ -34,7 +34,7 @@
     </scm>
     <properties>
         <java.version>21</java.version>
-        <spring-ai.version>1.0.0-SNAPSHOT</spring-ai.version>
+        <spring-ai.version>1.0.0</spring-ai.version>
         <hutool.version>5.8.36</hutool.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
         <jasypt.version>3.0.5</jasypt.version>

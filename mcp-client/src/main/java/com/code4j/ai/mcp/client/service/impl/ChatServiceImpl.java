@@ -40,7 +40,7 @@ public class ChatServiceImpl implements ChatService {
                         }
                         """ ).collect(Collectors.joining()));
         this.chatClient = this.chatClientBuilder
-                .defaultTools(this.tools)
+                .defaultToolCallbacks(this.tools)
                 .build();
     }
 
