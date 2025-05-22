@@ -25,6 +25,7 @@
         <module>mcp-server</module>
         <module>mcp-client</module>
         <module>mcp-common</module>
+        <module>yapi-mcp-server</module>
     </modules>
     <scm>
         <connection/>

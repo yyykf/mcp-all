@@ -1,0 +1,24 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: yapi-mcp-server
+        version: 1.0.0
+        request-timeout: 60
+        #        type: async
+        instructions: "This reactive service provides some tool for querying API documentation from Yapi"
+        capabilities:
+          prompt: false
+          resource: false
+          completion: false
+server:
+  port: 8888
+
+yapi:
+  base-url: http://yapi.example.com # 请替换为你的Yapi服务地址
+  project-tokens: # 使用Map结构
+    3723: your_token_for_project_1 # project_id: token
+    67890: your_token_for_project_2 # 另一个 project_id: token
+logging:
+  file.name:
+    ./yapi-mcp-server/logs/yapi-mcp-server.log
