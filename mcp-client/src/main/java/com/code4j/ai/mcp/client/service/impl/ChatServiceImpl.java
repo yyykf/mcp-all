@@ -35,8 +35,8 @@ public class ChatServiceImpl implements ChatService {
                 {}
                 """, Arrays.stream(this.tools.getToolCallbacks()).map(tool -> STR. """
                         {
-                            "name": "\{ tool.getName() }",
-                            "description: "\{ tool.getDescription() }"
+                            "name": "\{ tool.getToolDefinition().name() }",
+                            "description: "\{ tool.getToolDefinition().description() }"
                         }
                         """ ).collect(Collectors.joining()));
         this.chatClient = this.chatClientBuilder
