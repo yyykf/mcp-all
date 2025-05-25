@@ -67,4 +67,121 @@ public record YapiResponse<T>(
     ) {
 
     }
+
+    @JsonClassDescription("接口列表项数据")
+    public record InterfaceListItem(
+            @JsonProperty("_id")
+            Long id,
+            @JsonProperty("project_id")
+            Long projectId,
+            Long catid,
+            String title,
+            String path,
+            String method,
+            Long uid,
+            @JsonProperty("add_time")
+            Long addTime,
+            @JsonProperty("up_time")
+            Long upTime,
+            String status,
+            @JsonProperty("edit_uid")
+            Long editUid,
+            @JsonProperty("api_opened")
+            Boolean apiOpened,
+            List<String> tag
+    ) {
+
+    }
+
+    @JsonClassDescription("接口列表数据")
+    public record InterfaceListData(
+            Integer count,
+            Integer total,
+            List<InterfaceListItem> list
+    ) {
+
+    }
+
+    @JsonClassDescription("接口详情数据")
+    public record InterfaceDetailData(
+            @JsonProperty("_id")
+            Long id,
+            @JsonProperty("project_id")
+            Long projectId,
+            Long catid,
+            String title,
+            String path,
+            String method,
+            @JsonProperty("req_body_type")
+            String reqBodyType,
+            @JsonProperty("res_body")
+            String resBody,
+            @JsonProperty("res_body_type")
+            String resBodyType,
+            Long uid,
+            @JsonProperty("add_time")
+            Long addTime,
+            @JsonProperty("up_time")
+            Long upTime,
+            @JsonProperty("req_body_form")
+            List<ReqBodyFormParamData> reqBodyForm,
+            @JsonProperty("req_params")
+            List<ReqPathParamData> reqParams,
+            @JsonProperty("req_headers")
+            List<ReqHeaderParamData> reqHeaders,
+            @JsonProperty("req_query")
+            List<ReqQueryParamData> reqQuery,
+            String status,
+            @JsonProperty("edit_uid")
+            Long editUid,
+            @JsonProperty("res_body_is_json_schema")
+            boolean resBodyIsJsonSchema,
+            @JsonProperty("req_body_other")
+            String reqBodyOther,
+            String username,
+            String markdown
+    ) {
+
+    }
+
+    public record ReqBodyFormParamData(
+            @JsonProperty("_id") String id,
+            String name,
+            String type,
+            String example,
+            String desc,
+            String required
+    ) {
+
+    }
+
+    public record ReqPathParamData(
+            @JsonProperty("_id") String id,
+            String name,
+            String example,
+            String desc
+    ) {
+
+    }
+
+    public record ReqHeaderParamData(
+            @JsonProperty("_id") String id,
+            String name,
+            String value,
+            String example,
+            String desc,
+            String required
+    ) {
+
+    }
+
+    public record ReqQueryParamData(
+            @JsonProperty("_id") String id,
+            String name,
+            String example,
+            String desc,
+            String required
+    ) {
+
+    }
 }

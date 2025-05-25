@@ -1,4 +1,4 @@
-package com.code4j.ai.mcp.server.common.config;
+package com.code4j.ai.mcp.common.assmbler;
 
 import org.mapstruct.*;
 import org.mapstruct.MappingConstants.ComponentModel;
